@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+area_rectangle(float length,float width);
+int main(){
+float length,width,area;
+printf("enter the length:\n");
+scanf("%f",&length);
+printf("enter the width:\n");
+scanf("%f",&width);
+ area_rectangle(length,width);
+printf("area of rectangle is %f",area);
+return 0;
+}
+area_recatangle(float length,float width){
+float area;
+area=length*width;
+return area;
+}
