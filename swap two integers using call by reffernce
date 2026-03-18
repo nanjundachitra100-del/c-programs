@@ -1,0 +1,31 @@
+#include<stdio.h>
+void input(int *a,int *b);
+void swap(int *a,int *b);
+void output(int a,int b);
+int main(){
+int a,b;
+input(&a,&b);
+printf("the numbers before swapping %d %d :\n",a,b);
+swap(&a,&b);
+printf("the numbers after swapping %d %d :\n"a,b);
+output(a,b);
+return 0;
+}
+void input(int *a,int *b){
+printf("enter the value of a:\n");
+scanf("%d",a);
+printf("enter the value of b:\n");
+scanf("%d",b);
+}
+void swap(int *a,int *b){
+int temp=*a;
+*a=*b;
+*b=temp;
+}
+void output(int a,int b){
+printf("swapped numbers are %d %d:\n",a,b);
+}
+
+
+
+
