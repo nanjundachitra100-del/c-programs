@@ -1,0 +1,26 @@
+#include<stdio.h>
+void input(float*length,float*width);
+float area_rectangle(float length,float width);
+void output(float area);
+int main(){
+float length,width,area;
+input(&length,&width);
+area=area_rectangle(length,width);
+output(area);
+return 0;
+}
+void input(float*length,float*width){
+printf("enter the length:\n");
+scanf("%f",length);
+
+printf("enter the width:\n");
+scanf("%f",width);
+}
+float area_rectangle(float length,float width){
+float area;
+area=length*width;
+return area;
+}
+void output(float area){
+printf("area of the given recatngle is %f",area);
+}
